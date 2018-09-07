@@ -113,5 +113,29 @@ p h.has_key?("b") # displays false
 h = { "c" => 300, "a" => 100, "d" => 'non_value', "c" => 300  }
 
 p h.has_value?(300) # displays true
-p h.has_value?("non_value") # displays true 
+p h.has_value?("non_value") # displays true
 p h.has_value?("400") # display false
+
+#....time.....
+
+# argument_type: no argument
+# return_type: Time object
+
+ p Time.now
+
+
+ #....file .......
+#........exist.....
+
+# argument_type: string # file name
+# return_type: boolean
+
+p File.exist?("exercise3.rb")  # true ...
+p File.exist?("exercise1.rb")   # false ....
+# ...extname..
+
+#....extname
+# argument_type: string
+# return_type: string
+
+p File.extname("exercise3.rb")
